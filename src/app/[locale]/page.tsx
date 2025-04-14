@@ -1,6 +1,6 @@
 import {useTranslations} from 'next-intl';
-import { Link } from '../i18n/navigation';
-import { routing } from '../i18n/routing';
+import { Link } from '../../i18n/navigation';
+import { routing } from '../../i18n/routing';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
